@@ -1,7 +1,8 @@
 const TelegramBot = require("node-telegram-bot-api");
 const token = process.env.TOKEN;
+const token1 = process.env.TOKEN1;
 const bot = new TelegramBot(token, { polling: true });
-const bot1 = new TelegramBot('563733358:AAF0fogVjQMJ_9Fab-s__QbBvoyCWai44WM', {webHook: {port: 3000, host: "https://0.0.0.0"}});
+const bot1 = new TelegramBot(token1, {webHook: {port: 2564, host: "https://0.0.0.0"}});
 let price = 0.0008;
 
 bot.on("message", msg => {
