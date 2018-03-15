@@ -3,6 +3,7 @@ const TelegramBot = require("node-telegram-bot-api");
 const token = process.env.TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 let price = 0.0008;
+start;
 
 bot.on("message", msg => {
   const txt = msg.text;
