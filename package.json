@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^5.0.1",
-    "node-telegram-bot-api": "^0.30.0",
+    "node-telegram-bot-api": "0.29.0",
   }
 }
