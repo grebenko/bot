@@ -1,12 +1,9 @@
+process.env["NTBA_FIX_319"] = 1
 require('dotenv').config();
 const TelegramBot = require("node-telegram-bot-api");
 const token = process.env.TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 let price = 0.0008;
-const Promise = require('bluebird');
-Promise.config({
-  cancellation: true
-});
 
 bot.on("message", msg => {
   const txt = msg.text;
