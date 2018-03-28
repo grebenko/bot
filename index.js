@@ -22,6 +22,10 @@ bot.on("message", msg => {
   }
   const member = msg.new_chat_member.id;
   if (member != "0") {
-
+    bot.sendMessage(
+      chatId,
+      msg.new_chat_member.first_name +
+        ", welcome to the chat! Nice to have you in our community! Feel free to ask any questions related to the project."
+    );
   }
 });
